@@ -5,7 +5,7 @@ import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-const links = [['Home', '/'], ['About', '/about'], ['Admissions', '/admissions'], ['News & updates', '/news'], ['Contact', '/contact']];
+const links = [['Home', '/'], ['About', '/about'], ['Services', '/services'], ['Admissions', '/admissions'], ['News & updates', '/news'], ['Contact', '/contact']];
 
 export function SiteHeader() { const [open, setOpen] = useState(false); const pathname = usePathname(); const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href); return <>
   <div className="bg-gold px-5 py-2 text-center text-[11px] font-bold uppercase tracking-[.18em] text-white">Enrollment ongoing for selected grades — call 0779 809 913</div>
